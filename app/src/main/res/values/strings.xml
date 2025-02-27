@@ -1,8 +1,10 @@
 <resources>
     <string name="app_name">Restaurant Review</string>
-    <string name="title">Judul</string>
-    <string name="description">Description</string>
-    <string name="review">Review</string>
-    <string name="write_your_review_here">Write your review here..</string>
-    <string name="send">Kirim</string>
+    <string name="title">Dicoding Event</string>
+    <string name="description">Recommentdation event you!</string>
+    <string name="main_tab">Home</string>
+    <string name="tab_1">Upcoming</string>
+    <string name="tab_2">Finished</string>
+    <string name="register">Register</string>
+    <string name="placeholder_filter">DevCoach</string>
 </resources>

@@ -39,18 +39,16 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getRestoran(binding: ActivityMainBinding){
-        viewModel.getEventByActive(0).observe(this) {
+        viewModel.getEventByActive(0,null).observe(this) {
             when (it.state) {
                 State.SUCCESS -> {
-                    showLoading(false)
                     val transactionDetail = it.data
                     Log.d("EventData",transactionDetail.toString())
                 }
                 State.ERROR -> {
-                    showLoading(false)
+
                 }
                 State.LOADING -> {
-                    showLoading(true)
                 }
             }
         }
@@ -60,27 +58,16 @@ class MainActivity : AppCompatActivity() {
         viewModel.getEventByID(9183).observe(this) {
             when (it.state) {
                 State.SUCCESS -> {
-                    showLoading(false)
                     val transactionDetail = it.data
                     Log.d("EventDataByID",transactionDetail.toString())
                 }
                 State.ERROR -> {
-                    showLoading(false)
+
                 }
                 State.LOADING -> {
-                    showLoading(true)
+
                 }
             }
-        }
-    }
-
-
-
-    private fun showLoading(isLoading: Boolean) {
-        if (isLoading) {
-            binding.progressBar.visibility = View.VISIBLE
-        } else {
-            binding.progressBar.visibility = View.GONE
         }
     }
 }

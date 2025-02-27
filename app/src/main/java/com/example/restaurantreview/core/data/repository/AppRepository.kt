@@ -7,10 +7,10 @@ import kotlinx.coroutines.flow.flow
 
 class AppRepository(val remote:RemoteDataSource) {
 
-    fun appGetEventByActive(active:Int) = flow {
+    fun appGetEventByActive(active:Int,q:String?) = flow {
         emit(Resource.loading(null))
         try {
-            remote.remoteGetEventByActive(active).let {
+            remote.remoteGetEventByActive(active,q).let {
                 if (it.isSuccessful){
                     val body=it.body()
                     emit(Resource.success(body))
