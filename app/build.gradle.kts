@@ -47,8 +47,6 @@ dependencies {
     implementation(libs.glide)
     implementation(libs.picasso)
 
-    implementation(libs.koleton)
-
     implementation(libs.kotpref)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
