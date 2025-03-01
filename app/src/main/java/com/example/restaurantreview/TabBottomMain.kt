@@ -17,12 +17,10 @@ class TabBottomMain : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityTabBottomMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        val toolBar:Toolbar=binding.toolbar
-        setSupportActionBar(toolBar)
+
         supportActionBar?.hide()
 
-        val navView: BottomNavigationView = binding.navView
+        val navView: BottomNavigationView = binding.bottomNavigation
 
         val navController = findNavController(R.id.nav_host_fragment_activity_tab_bottom_main)
         // Passing each menu ID as a set of Ids because each
