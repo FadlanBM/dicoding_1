@@ -46,6 +46,7 @@ dependencies {
     implementation(libs.koin.android)
     implementation(libs.glide)
     implementation(libs.picasso)
+    implementation(libs.shimmer)
 
     implementation(libs.kotpref)
     implementation(libs.androidx.navigation.fragment.ktx)
@@ -63,6 +64,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.swiperefreshlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

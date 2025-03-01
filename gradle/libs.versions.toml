@@ -20,6 +20,8 @@ kotpref = "2.13.1"
 navigationUiKtx = "2.8.7"
 gson = "2.11.0"
 navigationFragmentKtx = "2.8.7"
+shimmer = "0.5.0"
+swiperefreshlayout = "1.1.0"
 
 
 [libraries]
@@ -45,6 +47,8 @@ androidx-activity = { group = "androidx.activity", name = "activity", version.re
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 picasso = { module = "com.squareup.picasso:picasso", version.ref = "picasso" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+shimmer = { module = "com.facebook.shimmer:shimmer", version.ref = "shimmer" }
+androidx-swiperefreshlayout = { group = "androidx.swiperefreshlayout", name = "swiperefreshlayout", version.ref = "swiperefreshlayout" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
